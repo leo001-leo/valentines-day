@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Will you be my valentine?</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }
+    .container {
+        margin-top: 50px;
+    }
+    h1 {
+        color: red;
+    }
+    .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 30px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: transform 0.3s ease;
+    }
+    .yes-btn {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+    }
+    .no-btn {
+        background-color: #f44336;
+        color: white;
+        border: none;
+    }
+    .no-btn:hover {
+        animation: move 0.5s infinite alternate;
+    }
+@keyframes move {
+        0% {
+            transform: translate(0, 0);
+        }
+        25% {
+            transform: translate(50px, 50px);
+        }
+        50% {
+            transform: translate(-50px, -50px);
+        }
+        75% {
+            transform: translate(-50px, 50px);
+        }
+        100% {
+            transform: translate(50px, -50px);
+        }
+    }
+    
+</style>
+</head>
+<body>
+<div class="container">
+<img id="bear" src="bearFirstPage.png" alt="Girl in a jacket"  width="300" height="400">
+    <h1>Ance, Will you be my valentine?</h1>
+    <button class="btn yes-btn" onclick="window.location.href='u_sure.html'">Yes</button>
+    <button class="btn no-btn" disabled>No</button>
+</div>
+</body>
+</html>
